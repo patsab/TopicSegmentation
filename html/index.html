@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic Segmentation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head> 
+<body>
+
+    <video id='myVideo' controls >
+        <source src='' type="video/mp4">
+    </video>
+
+    <h1 id="lecturename">No lecture selected</h1>
+  
+    <div id='chart'>
+        <canvas id='myChart'></canvas> 
+    </div>
+
+   <div class="tableTopics">
+        <table id="myTable">
+            <tr>
+                <th>TopicID</th>
+                <th>Keywords</th>
+            </tr>
+        </table> 
+    </div>
+
+    <div id='lectureselect'>
+        <select id='lectursel'>
+            <option>Select different lecture</option>
+        </select>
+        <br>
+        <select id='modelsel'>
+            <option>Select model</option>
+        </select>
+        <br>
+        <button onclick="changeLectureAndModel();">
+            Apply
+        </button>
+    </div>
+
+    <script src="vis.js"></script>
+</body>
+</html>

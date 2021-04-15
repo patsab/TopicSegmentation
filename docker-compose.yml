@@ -1,0 +1,21 @@
+---
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    hostname: mongodb
+    container_name: mongodb
+    ports:
+      - 27017:27017
+
+
+  pymongo:
+    build: ./python_module
+    hostname: pymongo
+    container_name: pymongo
+    ports:
+      - 5000:5000
+    depends_on: 
+      - mongodb
+    volumes:
+      - /data/saved_models:/app/saved_models

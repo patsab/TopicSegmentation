@@ -1,0 +1,63 @@
+video{
+    margin-top: 10;
+    margin-left: 15%;
+    margin-bottom:2em;
+    width: 70%;
+}
+
+div{
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#lectureselect{
+    width: 100% !important;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+select{
+    width: 350px;
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+}
+
+button{
+    display: table;
+    margin: 0 auto;
+}
+
+h1{
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.tableTopics{
+    width: 50%;
+    float:right;
+}
+
+table{    
+    width: 80%;
+    border-collapse:collapse;
+}
+
+th {
+  background-color:rgba(0, 0, 200, 0.3);
+  color: white;
+  height: 2em;
+  font-size: 1.5em;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
